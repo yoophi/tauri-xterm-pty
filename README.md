@@ -86,7 +86,7 @@ flowchart LR
 - [x] Tauri 2 + React + TypeScript 스캐폴드
 - [x] shadcn/ui + Tailwind CSS 4 설정
 - [x] xterm.js 대화형 터미널과 창 크기 대응
-- [x] WebGL2 가속 렌더링
+- [x] WebGL2 가속 렌더링과 DOM 렌더러 fallback
 - [x] FSD 프런트엔드 레이어
 - [x] 헥사고날 Rust 레이어
 - [x] 기본 셸, 플랫폼, 아키텍처, 작업 디렉터리 조회 command

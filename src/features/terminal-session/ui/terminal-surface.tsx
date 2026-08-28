@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { FitAddon } from "@xterm/addon-fit";
 import { Unicode11Addon } from "@xterm/addon-unicode11";
-import { WebglAddon } from "@xterm/addon-webgl";
 import { Terminal } from "@xterm/xterm";
 import "@xterm/xterm/css/xterm.css";
 
@@ -17,6 +16,7 @@ import {
   TERMINAL_FONT_FAMILY,
 } from "@/features/terminal-session/model/terminal-font";
 import { createTerminalOptions } from "@/features/terminal-session/model/terminal-options";
+import { enableWebglRenderer } from "@/features/terminal-session/model/webgl-renderer";
 
 const textEncoder = new TextEncoder();
 
@@ -43,7 +43,7 @@ export function TerminalSurface() {
     terminal.unicode.activeVersion = "11";
     terminal.loadAddon(fitAddon);
     terminal.open(host);
-    terminal.loadAddon(new WebglAddon());
+    enableWebglRenderer(terminal);
 
     const reportError = (reason: unknown) => {
       const message = reason instanceof Error ? reason.message : String(reason);
