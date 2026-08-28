@@ -45,7 +45,12 @@ export default defineConfig(async () => ({
       output: {
         manualChunks: {
           react: ["react", "react-dom"],
-          xterm: ["@xterm/xterm", "@xterm/addon-fit"],
+          xterm: [
+            "@xterm/xterm",
+            "@xterm/addon-fit",
+            "@xterm/addon-unicode11",
+            "@xterm/addon-webgl",
+          ],
         },
       },
     },

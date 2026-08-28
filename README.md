@@ -9,7 +9,7 @@ Tauri 데스크탑 앱에서 Rust PTY와 xterm.js를 연결하는 방법을 검�
 - [Tauri 2](https://tauri.app/), Rust 2024 edition, [portable-pty](https://docs.rs/portable-pty/)
 - React 19, TypeScript, Vite 7
 - [shadcn/ui](https://ui.shadcn.com/)와 Tailwind CSS 4
-- [xterm.js](https://xtermjs.org/)와 FitAddon
+- [xterm.js](https://xtermjs.org/), FitAddon, Unicode11Addon, WebglAddon
 - Vitest, Testing Library, Rust unit test
 
 ## 실행
@@ -86,6 +86,7 @@ flowchart LR
 - [x] Tauri 2 + React + TypeScript 스캐폴드
 - [x] shadcn/ui + Tailwind CSS 4 설정
 - [x] xterm.js 대화형 터미널과 창 크기 대응
+- [x] WebGL2 가속 렌더링
 - [x] FSD 프런트엔드 레이어
 - [x] 헥사고날 Rust 레이어
 - [x] 기본 셸, 플랫폼, 아키텍처, 작업 디렉터리 조회 command
